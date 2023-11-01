@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Marks </title>
+    <style>
+        h2{
+            color: red;
+        }
+        h1{
+            color: blue;
+        }
+        h3{
+            color: green;
+        }
+        body{
+        background-color:lightblue;
+       }
+    </style>
+</head>
+
+<body>
+    <script type = "text/javascript">
+    function calcage(){
+        name1 = name1.value;
+        mark = mark.value;
+        if (mark >= 80 && mark <=100){
+            document.getElementById('results').innerHTML = "<h2>Hello " + name1 + ", " +mark+ "% : Symbol A</h2>";
+        }
+        else if(mark >= 70 && mark <=79){
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + ", " +mark+ "5 : Symbol B</h1>";
+        }
+        else if(mark >= 60 && mark <=69){
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + ", " +mark+ "%: Symbol C</h1>";
+        }
+        else if(mark >= 50 && mark <=59){
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + ", " +mark+ "% : Symbol D</h1>";
+        }
+        else if(mark >= 40 && mark <=49){
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + ", " +mark+ "% : Symbol E</h1>";
+        }
+        if(mark >= 0 && mark <=39){
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + ", " +mark+ "% : Symbol F</h1>";
+        }
+        //replace document.write with alert and compare.
+    }
+    </script>
+    <form action="#" onsubmit="calcage(); return false;">
+    <!--Lables -->
+    <label for = "name" > Name:  </label>
+    <input type = "text" id = "name1" name = "name1"> <br/>
+
+    <label for = "mark" > Mark: </label>
+    <input type = "text" id = "mark" name = "mark"> <br/>
+    
+    <input type = "submit" value = "calculate"><br/>
+
+</form>
+    <p id = "results"> </p>
+</body>
+
+</html>

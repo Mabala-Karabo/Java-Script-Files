@@ -1,0 +1,15 @@
+<html>
+    <head><title>Forms part1</title></head>
+    <body>
+<script type = "text/javascript">
+    function getcube(){
+        var number = document.getElementById("number").value;
+        alert("Cube of: " +number + " is " +number * number * number);
+    }
+</script>
+<form name = "form1">
+    Enter No : <input type = "text" id = "number" name = "number"/>
+    <input type = "button" onclick = "getcube()" value = "Cube"/>
+</form>
+    </body>
+</html>

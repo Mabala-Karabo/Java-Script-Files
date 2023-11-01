@@ -1,0 +1,19 @@
+<html>
+
+<head><title></title></head>
+
+<body>
+<p>Eg of the event listerner</p>
+<p>Click the button to see effect</p>
+<button id = "btn">Click me</button>
+<p id = "para"></p>
+
+    <script type = "text/javascript">
+    document.getElementById("btn").addEventListener("click", fun);
+    function fun(){
+        document.getElementById("para").innerHTML = "Hello world" + "<br>" + "Welcome to FIS/Naspers";
+    }
+
+    </script>
+</body>
+</html>

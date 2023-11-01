@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+<title>JavaScript</title>
+<style>
+    h1 {
+        color:navy;
+        margin-left:20px;
+       }
+       body{
+        background-color:lightblue;
+       }
+    </style>
+    
+</head>
+
+<body>
+<script type = "text/javascript">
+
+var a = 23;
+var b = "Karabo";
+var c = 12;
+var linebreak = "<br/>";
+
+//method1
+document.write("Results : ");
+document.write(a+c); document.write(" " + b); // it results to the answer value 
+document.write(linebreak);
+
+//The Area formula of Circle = pi*r^2
+const pi = Math.PI; //OR const PI = 3.141592653589793; or 22/7;
+var radius = 7;
+var area = pi * radius * radius;
+
+document.write("Area of circle : " + area);
+document.write(linebreak);
+
+//Method 2 with functions
+function findarea(radius)
+{
+    return (pi*radius*radius);
+}
+var area = findarea(radius);
+document.write("<h1>Area of Circle  with radius "+ radius +" is : " + area + "</h1>");
+</script>
+
+</body>
+
+</html>

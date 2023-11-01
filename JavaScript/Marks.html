@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Driving License Department</title>
+    <style>
+        h1{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        h3{
+            color: green;
+        }
+        body{
+        background-color:lightblue;
+       }
+    </style>
+</head>
+
+<body>
+    <script type = "text/javascript">
+
+
+function passmark(){
+        name1 = name1.value;
+        marks = marks.value;
+        let symbol;
+        if (marks < 50){
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + " You have failed</h1>";
+            if (marks < 39){
+                symbol = "F";
+                document.getElementById('results').innerHTML = "<h3>Your symbol is: " + symbol + "</h1>";
+            }
+            else if (marks < 49){
+                symbol = "E";
+                document.getElementById('results').innerHTML = "<h3>Your symbol is: " + symbol + "</h1>";
+            }
+        }
+        else if(marks >= 50 && marks <= 79) {
+            document.getElementById('results').innerHTML = "<h2>Hello " + name1 + " You passed with average marks</h2>";
+            if (marks >= 50 && marks <59){
+                symbol = "D";
+                document.getElementById('results').innerHTML = "<h3>Your symbol is: " + symbol + "</h1>";
+            }
+            else if (marks >= 60 && marks <= 69){
+                symbol = "C";
+                document.getElementById('results').innerHTML = "<h3>Your symbol is: " + symbol + "</h1>";
+            }
+            else if (marks >= 70 && marks <= 79){
+                symbol = "B";
+                document.getElementById('results').innerHTML = "<h3>Your symbol is: " + symbol + "</h1>";
+            }
+            
+        }
+        else{
+            document.getElementById('results').innerHTML = "<h3>Hello " + name1 + " You have passed with a distintion</h3>";
+            if (marks >= 80){
+                symbol = "A";
+                document.getElementById('results').innerHTML = "<h3>Your symbol is: " + symbol + "</h1>";
+            }
+        }
+        //replace document.write with alert and compare.
+    }
+    // Use a switch statement to assign a symbol/grade based on the user's marks
+
+
+    </script>
+    <form action="#" onsubmit="passmark(); return false;">
+    <!--Lables -->
+    <label for = "name" > Name:  </label>
+    <input type = "text" id = "name1" name = "name1"> <br/>
+
+    <label for = "mark" > Marks%: </label>
+    <input type = "text" id = "marks" name = "marks"> <br/>
+    
+    <input type = "submit" value = "calculate"><br/>
+
+</form>
+
+    <p id = "results"> </p>
+</body>
+
+</html>

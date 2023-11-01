@@ -1,0 +1,35 @@
+<html>
+
+<head><title>single click but with styled functions</title></head>
+
+<body>
+<p>Eg of the event listerner() method multiple events same element </p>
+<p>Click the button to see effect</p>
+<button id = "btn">Click me</button>
+<p id = "para"></p>
+<p id = "para1"></p>
+
+    <script type = "text/javascript">
+    function fun(){
+        btn.style.width = "50px";
+        btn.style.height = "50px";
+        btn.style.background = "red";
+        btn.style.color = "aqua";
+    }
+    function fun1(){
+        document.getElementById("para").innerHTML = "This is a second funtion" + "<br>" + "Welcome to Mindworx";
+    }
+    function fun2(){
+        btn.style.width = "100px";
+        btn.style.height = "50px";
+        btn.style.background = "blue";
+        btn.style.color = "black";
+    }
+    var mybtn = document.getElementById("btn");
+    mybtn.addEventListener("mouseover", fun)
+    mybtn.addEventListener("click", fun1)
+    mybtn.addEventListener("mouseout", fun2)
+
+    </script>
+</body>
+</html>

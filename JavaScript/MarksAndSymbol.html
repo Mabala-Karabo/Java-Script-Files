@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Driving License Department</title>
+    <style>
+        h1{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        h3{
+            color: green;
+        }
+        body{
+        background-color:lightblue;
+       }
+    </style>
+</head>
+
+<body>
+<script type = "text/javascript">
+var name = prompt("Enter your name : ")
+var age = prompt("Enter your age : ");
+
+if(age<16)
+{
+    alert("<h1> Hello "+name+" You are not eligible for both learners and drivers license</h1>");
+}
+else if(age>15 && age<18)
+{
+    alert("<h2>Hello "+name+" You are eligible for Learners license</h2>");
+}
+else
+{
+    alert("<h3>Hello "+name+" You are eligible for both learners and drivers license</h3>");
+}
+
+</script>
+</body>
+
+</html>

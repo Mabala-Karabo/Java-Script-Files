@@ -1,0 +1,15 @@
+<html>
+    <head><title>Forms part1</title></head>
+    <body>
+<script type = "text/javascript">
+    function printvalue(){
+        var name = document.form1.name.value;
+        alert("Welcome: " +name);
+    }
+</script>
+<form name = "form1">
+    Enter Name : <input type = "text" name = "name"/>
+    <input type = "button" onclick = "printvalue()" value = "Print Name"/>
+</form>
+    </body>
+</html>

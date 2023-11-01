@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Driving License Department</title>
+    <style>
+        h1{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        h3{
+            color: green;
+        }
+        body{
+        background-color:lightblue;
+       }
+    </style>
+</head>
+
+<body>
+    <script type = "text/javascript">
+ /*       var age = 18;
+        if (age < 16){
+            document.write("<h1>You are not eligible for both learners and driver's license</h1>");
+        }
+        else if(age >=16 && age < 18) {
+            document.write("<h2>You are eligible for learners only</h2>");
+        }
+        else{
+            document.write("<h3>You are eligible for both learners and license</h3>");
+        }
+
+*/
+//input from the user part:
+            //the following lines will be replaced by the labels at the bottom
+       // var name = prompt("Enter your Name: ");
+       // var age = prompt("Enter your age: ");
+       /*
+    function calcage(){
+       var name = document.getElementById('name');
+       var age = document.getElementById('age');
+        if (age < 16){
+            document.getElementById('results').innerHTML = "<h1>Hello " +name+ " You are not eligible for both learners and driver's license</h1>";
+        }
+        else if(age >=16 && age < 18) {
+            document.getElementById('results').innerHTML = "<h2>Hello " +name+ " You are eligible for learners only</h2>";
+        }
+        else{
+            document.getElementById('results').innerHTML = "<h3>Hello " +name+ " You are eligible for both learners and license</h3>";
+        }
+        //replace document.write with alert and compare.
+    }
+    */
+    function calcage(){
+        name1 = name1.value;
+        age = age.value;
+        if (age < 16){
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + " You are not eligible for both learners and driver's license</h1>";
+        }
+        else if(age >=16 && age < 18) {
+            document.getElementById('results').innerHTML = "<h2>Hello " + name1 + " You are eligible for learners only</h2>";
+        }
+        else{
+            document.getElementById('results').innerHTML = "<h3>Hello " + name1 + " You are eligible for both learners and license</h3>";
+        }
+        //replace document.write with alert and compare.
+    }
+    </script>
+    <form action="#" onsubmit="calcage(); return false;">
+    <!--Lables -->
+    <label for = "name" > Name:  </label>
+    <input type = "text" id = "name1" name = "name1"> <br/>
+
+    <label for = "age" > Age: </label>
+    <input type = "text" id = "age" name = "age"> <br/>
+    
+    <input type = "submit" value = "calculate"><br/>
+
+</form>
+    <p id = "results"> </p>
+</body>
+
+</html>

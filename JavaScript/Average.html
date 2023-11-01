@@ -1,0 +1,75 @@
+<html>
+<!--Project 	WeatherStationV10 
+ 
+Purpose 	Use multi-if-else-statements. 
+ 
+Description 	This project contains a class called Barometer, containing two properties Pressure and WeatherDescription. The latter property gives an old-fashioned description of the weather, as a function of the pressure, according to this table: 
+ 
+Pressure 	WeatherDescription 
+Below 980 	Stormy 
+980-1000 	Rainy 
+1000-1020 	Changing 
+1020-1040 	Fair 
+Above 1040 	Very dry 
+
+-->
+<head>
+    <title>Getting Average Marks</title>
+    <style>
+    body{
+        background-color: gray;
+        text-align: center;
+
+    }
+    h1{
+        color: rgb(9, 66, 190);
+        text-align: bottom;
+        margin: 20px;
+        padding: 10px;
+        font-size: 32;
+    }
+    form{
+        margin: 20px;
+        padding: 10px;
+        font-size: 32px;
+    }
+
+    </style>
+</head>
+<body>
+    <script type = "text/javascript">
+function passmark(){
+    mark1 = parseInt(mark1.value);
+    mark2 = parseInt(mark2.value);
+    mark3 = parseInt(mark3.value);
+   let y = (mark1 + mark2 + mark3) / 3;
+   var avg = Math.round(y);
+        if(avg < 50){
+            document.getElementById('results').innerHTML = "<h1>You do not qualify to write an exam  with an average of " + avg +"% </h1>";
+        }
+        else {
+            document.getElementById('results').innerHTML = "<h1>  You qualify to sit for an exam  with an average of " + avg +"% </h1>";
+        }
+}
+    </script>
+
+<form action="#" onsubmit="passmark(); return false;">
+    <!--Lables -->
+    <label for = "name" > First term mark:  </label>
+    <input type = "text" id = "mark1" name = "mark1"> <br/>
+
+    <label for = "name" > Mid Term Mark:  </label>
+    <input type = "text" id = "mark2" name = "mark2"> <br/>
+
+    <label for = "name" > Preliminary term Mark:  </label>
+    <input type = "text" id = "mark3" name = "mark3"> <br/>
+
+    <input type = "submit" value = "calculate"><br/>
+
+</form>
+<p id = "results"> </p>
+</body>
+
+
+
+</html>

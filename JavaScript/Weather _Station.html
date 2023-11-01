@@ -1,0 +1,71 @@
+<html>
+<!--Project 	WeatherStationV10 
+ 
+Purpose 	Use multi-if-else-statements. 
+ 
+Description 	This project contains a class called Barometer, containing two properties Pressure and WeatherDescription. The latter property gives an old-fashioned description of the weather, as a function of the pressure, according to this table: 
+ 
+Pressure 	WeatherDescription 
+Below 980 	Stormy 
+980-1000 	Rainy 
+1000-1020 	Changing 
+1020-1040 	Fair 
+Above 1040 	Very dry 
+
+-->
+<head>
+    <title>WeatherDescription</title>
+    <style>
+    body{
+        background-color: blueviolet;
+    }
+    h1{
+        color: black;
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    form{
+        margin: 20px;
+        padding: 10px;
+        font-size: 32px;
+    }
+
+    </style>
+</head>
+<body>
+    <script type = "text/javascript">
+function barometer(){
+    prs = prs.value;
+        if(prs < 980){
+            document.getElementById('results').innerHTML = "<h1>Stormy </h1>";
+        }
+        else if(prs >= 980 && prs < 1000){
+            document.getElementById('results').innerHTML = "<h1> Raining </h1>";
+        }
+        else if(prs >= 1000 && prs < 1020){
+            document.getElementById('results').innerHTML = "<h1>  Raining </h1>";
+        }
+        else if(prs >= 1020 && prs < 1040){
+            document.getElementById('results').innerHTML = "<h1> Fair </h1>";
+        }
+        else{
+            document.getElementById('results').innerHTML = "<h1> Very Dry </h1>";
+        }
+}
+    </script>
+
+<form action="#" onsubmit="barometer(); return false;">
+    <!--Lables -->
+    <label for = "name" > Pressure:  </label>
+    <input type = "text" id = "prs" name = "prs"> <br/>
+
+    <input type = "submit" value = "calculate"><br/>
+
+</form>
+<p id = "results"> </p>
+</body>
+
+
+
+</html>

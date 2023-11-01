@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+<title>JavaScript</title>
+
+</head>
+
+
+<body>
+<script type = "text/javascript">
+
+var a = 23;
+var b = "Neo";
+var c = 12;
+var linebreak = "<br/>";
+
+document.write("Results : ");
+document.write(linebreak);
+document.write(a+c); // it results to the answer value 
+
+</script>
+
+
+
+</body>
+
+
+</html>c

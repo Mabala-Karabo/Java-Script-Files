@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Marks </title>
+    <style>
+        h2{
+            color: red;
+        }
+        h1{
+            color: blue;
+        }
+        h3{
+            color: green;
+        }
+        body{
+        background-color:lightblue;
+       }
+    </style>
+</head>
+
+<body>
+    <script type = "text/javascript">
+    function calcage(){
+        name1 = name1.value;
+        mark = mark.value;
+        if (mark < 50){
+            document.getElementById('results').innerHTML = "<h2>Hello " + name1 + " You have failed</h2>";
+        }
+        else{
+            document.getElementById('results').innerHTML = "<h1>Hello " + name1 + " You have passed</h1>";
+        }
+        //replace document.write with alert and compare.
+    }
+    </script>
+    <form action="#" onsubmit="calcage(); return false;">
+    <!--Lables -->
+    <label for = "name" > Name:  </label>
+    <input type = "text" id = "name1" name = "name1"> <br/>
+
+    <label for = "mark" > Mark: </label>
+    <input type = "text" id = "mark" name = "mark"> <br/>
+    
+    <input type = "submit" value = "calculate"><br/>
+
+</form>
+    <p id = "results"> </p>
+</body>
+
+</html>
